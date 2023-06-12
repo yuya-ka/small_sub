@@ -1,0 +1,19 @@
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+/Users/divx/.rbenv/versions/3.0.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230611-81064-yn7emx sitelibdir\=./.gem.20230611-81064-yn7emx clean
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230611-81064-yn7emx sitelibdir\=./.gem.20230611-81064-yn7emx
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230611-81064-yn7emx sitelibdir\=./.gem.20230611-81064-yn7emx install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20230611-81064-yn7emx/bootsnap
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230611-81064-yn7emx sitelibdir\=./.gem.20230611-81064-yn7emx clean

@@ -1,0 +1,8 @@
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/ruby-debug-ide-0.7.3/ext
+/Users/divx/.rbenv/versions/3.0.2/bin/ruby mkrf_conf.rb
+Installing base gem
+Building native extensions. This could take a while...
+Building native extensions. This could take a while...
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/ruby-debug-ide-0.7.3/ext
+/Users/divx/.rbenv/versions/3.0.2/bin/ruby -rrubygems /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/rake-13.0.6/exe/rake RUBYARCHDIR\=/Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/extensions/x86_64-darwin-21/3.0.0/ruby-debug-ide-0.7.3 RUBYLIBDIR\=/Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/extensions/x86_64-darwin-21/3.0.0/ruby-debug-ide-0.7.3

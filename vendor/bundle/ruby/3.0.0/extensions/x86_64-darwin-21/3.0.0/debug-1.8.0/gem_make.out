@@ -1,0 +1,20 @@
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+/Users/divx/.rbenv/versions/3.0.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230611-88218-pnoid5 sitelibdir\=./.gem.20230611-88218-pnoid5 clean
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230611-88218-pnoid5 sitelibdir\=./.gem.20230611-88218-pnoid5
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230611-88218-pnoid5 sitelibdir\=./.gem.20230611-88218-pnoid5 install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20230611-88218-pnoid5/debug
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230611-88218-pnoid5 sitelibdir\=./.gem.20230611-88218-pnoid5 clean

@@ -1,0 +1,24 @@
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/io-console-0.6.0/ext/io/console
+/Users/divx/.rbenv/versions/3.0.2/bin/ruby extconf.rb
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... no
+checking for rb_scheduler_timeout()... no
+creating Makefile
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20230611-88218-ntpoh5 sitelibdir\=./.gem.20230611-88218-ntpoh5 clean
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20230611-88218-ntpoh5 sitelibdir\=./.gem.20230611-88218-ntpoh5
+compiling console.c
+linking shared-object io/console.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20230611-88218-ntpoh5 sitelibdir\=./.gem.20230611-88218-ntpoh5 install
+/usr/bin/install -c -m 0755 console.bundle ./.gem.20230611-88218-ntpoh5/io
+
+current directory: /Users/divx/app-development/small_sub/vendor/bundle/ruby/3.0.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20230611-88218-ntpoh5 sitelibdir\=./.gem.20230611-88218-ntpoh5 clean
