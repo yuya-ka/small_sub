@@ -1,0 +1,32 @@
+<% content_for :head do %>
+  <style>
+    .auth-form-container {
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+  </style>
+<% end %>
+
+<div class="auth-form-container" style="display: flex; justify-content: center; align-items: center; height: calc(100vh - 50px); width: 100%;">
+  <div style="width: 300px; margin-right: 100px; margin-bottom: 100px;">
+    <h2 class="text-center mb-4">サインアップ</h2>
+    <%= form_with model: @user, url: user_registration_path, class: 'needs-validation', local: true do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+      <div class="form-group">
+        <%= f.label :email, "メールアドレス", class: "form-label" %>
+        <%= f.email_field :email, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :password, "パスワード", class: "form-label" %>
+        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :password_confirmation, "パスワードの確認", class: "form-label" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+      </div>
+      <div style="margin-top: 20px;" class="text-center">
+        <%= f.submit "サインアップ", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+</div>

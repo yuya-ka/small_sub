@@ -1,0 +1,97 @@
+<% if user_signed_in? %>
+  <div class="list-content">
+    <div class="container my-4">
+      <h2>商品一覧</h2>
+      <% if @products.empty? %>
+        <div class="alert alert-warning" role="alert">
+          No products available.
+        </div>
+      <% else %>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                <%= link_to products_path(name_sort: (@name_sort == 'asc' ? 'desc' : 'asc')), style: "text-decoration: none; color: inherit;" do %>
+                  名前
+                  <% if @name_sort == 'asc' %>
+                    <i class="fas fa-sort-up"></i>
+                  <% else %>
+                    <i class="fas fa-sort-down"></i>
+                  <% end %>
+                <% end %>
+              </th>
+              <th>
+                <%= link_to products_path(desc_sort: (@desc_sort == 'asc' ? 'desc' : 'asc')), style: "text-decoration: none; color: inherit;" do %>
+                  説明
+                  <% if @desc_sort == 'asc' %>
+                    <i class="fas fa-sort-up"></i>
+                  <% else %>
+                    <i class="fas fa-sort-down"></i>
+                  <% end %>
+                <% end %>
+              </th>
+              <th>
+                <%= link_to products_path(price_sort: (@price_sort == 'asc' ? 'desc' : 'asc')), style: "text-decoration: none; color: inherit;" do %>
+                  価格
+                  <% if @price_sort == 'asc' %>
+                    <i class="fas fa-sort-up"></i>
+                  <% else %>
+                    <i class="fas fa-sort-down"></i>
+                  <% end %>
+                <% end %>
+              </th>
+              <th>
+                <%= link_to products_path(quantity_sort: (@quantity_sort == 'asc' ? 'desc' : 'asc')), style: "text-decoration: none; color: inherit;" do %>
+                  個数
+                  <% if @quantity_sort == 'asc' %>
+                    <i class="fas fa-sort-up"></i>
+                  <% else %>
+                    <i class="fas fa-sort-down"></i>
+                  <% end %>
+                <% end %>
+              </th>
+              <th>
+                <%= link_to products_path(category_sort: (@category_sort == 'asc' ? 'desc' : 'asc')), style: "text-decoration: none; color: inherit;" do %>
+                  カテゴリー
+                  <% if @category_sort == 'asc' %>
+                    <i class="fas fa-sort-up"></i>
+                  <% else %>
+                    <i class="fas fa-sort-down"></i>
+                  <% end %>
+                <% end %>
+              </th>
+              <th>
+                <%= link_to products_path(status_sort: (@status_sort == 'asc' ? 'desc' : 'asc')), style: "text-decoration: none; color: inherit;" do %>
+                  ステータス
+                  <% if @status_sort == 'asc' %>
+                    <i class="fas fa-sort-up"></i>
+                  <% else %>
+                    <i class="fas fa-sort-down"></i>
+                  <% end %>
+                <% end %>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @products.each do |product| %>
+              <tr>
+                <td><%= highlight(product.name, params[:search]) %></td>
+                <td><%= product.description %></td>
+                <td><%= number_to_currency(product.price) %></td>
+                <td><%= product.quantity %></td>
+                <td><%= product.category %></td>
+                <td><%= product.status %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% end %>
+    </div>
+  </div>
+<% else %>
+  <div class="container my-4">
+    <div class="alert alert-warning" role="alert">
+      Please sign in to view products.
+    </div>
+  </div>
+<% end %>

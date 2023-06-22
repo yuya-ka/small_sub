@@ -1,0 +1,19 @@
+.list-content {
+  width: calc(100vw - 280px);
+  height: calc(100vh - 50px);
+}
+
+/* -------------------- new -------------------- */
+.form-container {
+  max-width: 800px;
+  margin: 5rem auto;
+}
+
+.form-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.form-footer {
+  text-align: right;
+}

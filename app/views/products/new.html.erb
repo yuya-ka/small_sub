@@ -1,0 +1,40 @@
+<div class="form-container">
+  <h2 class="form-header">Order</h2>
+  <%= form_for @product, html: { class: 'needs-validation', novalidate: true } do |f| %>
+    <div class="row">
+      <div class="form-group col-md-6 mb-3">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+      <div class="form-group col-md-6 mb-3">
+        <%= f.label :price %>
+        <%= f.number_field :price, min: 0, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group col-md-6 mb-3 mx-0">
+      <%= f.label :description %>
+      <%= f.text_area :description, rows: 3, class: "form-control" %>
+    </div>
+
+    <div class="row">
+      <div class="form-group col-md-6 mb-3">
+        <%= f.label :quantity %>
+        <%= f.number_field :quantity, min: 1, class: "form-control" %>
+      </div>
+      <div class="form-group col-md-6 mb-3">
+        <%= f.label :category %>
+        <%= f.select :category, Product.categories.keys.map { |c| [c, c] }, { prompt: '---' }, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <%= f.label :status %>
+      <%= f.select :status, Product.statuses.keys.map { |s| [s, s] }, {}, class: "form-control" %>
+    </div>
+
+    <div class="form-footer">
+      <%= f.submit "作成", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

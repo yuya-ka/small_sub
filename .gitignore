@@ -36,3 +36,28 @@ yarn-debug.log*
 .yarn-integrity
 
 .env
+
+# Ignore RubyMine files
+/.idea/
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/public/system/*
+
+# Ignore database configuration and schema file
+/config/database.yml
+/db/schema.rb
+
+# Ignore Mac files
+.DS_Store
+
+/vendor/bundle/*
+/bin/*
+/build_info/*
+/cache/*
+/doc/*
