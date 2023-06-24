@@ -73,6 +73,9 @@
               <th>
                 お気に入り
               </th>
+              <th>
+                購入
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -86,6 +89,9 @@
                 <td><%= product.status %></td>
                 <td>
                   <%= button_to 'お気に入りに追加', favorites_path(product_id: product.id) %>
+                </td>
+                <td>
+                  <%= button_to 'カートに追加', cart_items_path(product_id: product.id) %>
                 </td>
               </tr>
             <% end %>
