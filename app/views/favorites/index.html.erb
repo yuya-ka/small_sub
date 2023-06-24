@@ -1,0 +1,27 @@
+<div class="list-content">
+  <div class="container my-4" style="height: 100%; overflow: scroll;">
+    <h2 style="margin-bottom: 20px;">お気に入り一覧</h2>
+    <div class="row">
+      <% @favorites.each do |favorite| %>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="card-img-top" src="<%= asset_path('default_image.webp') %>" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><%= favorite.product.name %></h5>
+              <p class="card-text"><%= favorite.product.description %></p>
+            </div>
+            <ul class="list-group list-group-flush" style="border-bottom: none;">
+              <li class="list-group-item" style="border-bottom: none;">価格: <%= number_to_currency(favorite.product.price, unit: "¥", format: "%u%n") %></li>
+              <li class="list-group-item" style="border-bottom: none;">数量: <%= favorite.product.quantity %></li>
+              <li class="list-group-item" style="border-bottom: none;">カテゴリ: <%= favorite.product.category %></li>
+              <li class="list-group-item" style="border-bottom: none;">ステータス: <%= favorite.product.status %></li>
+            </ul>
+            <div class="card-body">
+              <%= button_to 'お気に入りから削除', favorite_path(id: favorite.id), method: :delete, class: "btn btn-danger" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

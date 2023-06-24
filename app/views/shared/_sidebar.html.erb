@@ -11,31 +11,31 @@
       <li class="nav-item">
         <%= link_to products_path, class: "nav-link link-dark", aria: { current: "page" } do %>
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-          Home
+          商品一覧
         <% end %>
       </li>
       <li>
         <%= link_to new_product_path, class: "nav-link link-dark" do %>
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          注文
+          新規作成
         <% end %>
       </li>
       <li>
         <a href="#" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-          Dashboard
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          カート
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-          Products
-        </a>
+        <%= link_to favorites_path, class: "nav-link link-dark" do %>
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+          お気に入り一覧
+        <% end %>
       </li>
       <li>
         <a href="#" class="nav-link link-dark">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-          Customers
+          その他
         </a>
       </li>
     </ul>
@@ -46,10 +46,10 @@
         <strong>kato</strong>
       </a>
       <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><a class="dropdown-item" href="#">設定</a></li>
+        <li><a class="dropdown-item" href="#">プロフィール</a></li>
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
+        <li><a class="dropdown-item" href="#">その他</a></li>
       </ul>
     </div>
   </div>

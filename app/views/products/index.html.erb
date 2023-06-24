@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
   <div class="list-content">
     <div class="container my-4">
-      <h2>商品一覧</h2>
+      <h2 style="margin-bottom: 20px;">商品一覧</h2>
       <% if @products.empty? %>
         <div class="alert alert-warning" role="alert">
           No products available.
@@ -70,6 +70,9 @@
                   <% end %>
                 <% end %>
               </th>
+              <th>
+                お気に入り
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -81,6 +84,9 @@
                 <td><%= product.quantity %></td>
                 <td><%= product.category %></td>
                 <td><%= product.status %></td>
+                <td>
+                  <%= button_to 'お気に入りに追加', favorites_path(product_id: product.id) %>
+                </td>
               </tr>
             <% end %>
           </tbody>

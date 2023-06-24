@@ -59,3 +59,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 # gem 'jquery-rails'
 gem 'actiontext', require: 'action_text'
+# gem 'font-awesome-sass'
