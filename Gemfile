@@ -60,3 +60,7 @@ gem 'devise'
 # gem 'jquery-rails'
 gem 'actiontext', require: 'action_text'
 # gem 'font-awesome-sass'
+
+group :production do
+  gem 'unicorn'
+end
