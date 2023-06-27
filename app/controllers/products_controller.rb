@@ -37,7 +37,7 @@ class ProductsController < ApplicationController
 
   private
   def product_params
-    params.require(:product).permit(:name, :description, :price, :image_url, :quantity, :customer_name, :customer_email)
+    params.require(:product).permit(:name, :description, :price, :quantity, :customer_name, :customer_email)
   end
 
   def move_to_index
