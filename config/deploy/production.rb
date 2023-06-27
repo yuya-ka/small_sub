@@ -60,3 +60,4 @@
 #     # password: "please use keys"
 #   }
 server '35.72.115.141', user: 'ec2-user', roles: %w{app db web}
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
